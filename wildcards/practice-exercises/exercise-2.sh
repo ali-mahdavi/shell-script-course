@@ -3,8 +3,11 @@
 rename_files_by_user () {
     echo "Please enter a file extension: "
     read FILE_EXTENSION
+    # OR read -p "Please enter a file extension: " FILE_EXTENSION
+
     echo "Please enter a file prefix:  (Press ENTER for $(date -I))."
     read FILE_PREFIX
+    # OR read -p "Please enter a file prefix:  (Press ENTER for $(date -I))." FILE_PREFIX
 
     if [ -z $FILE_PREFIX ]
     then
